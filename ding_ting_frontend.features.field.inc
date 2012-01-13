@@ -233,10 +233,11 @@ function ding_ting_frontend_field_default_fields() {
           'weight' => '8',
         ),
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
+          'module' => 'ding_availability',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
+          'type' => 'ding_availability_default',
+          'weight' => '2',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -313,7 +314,7 @@ function ding_ting_frontend_field_default_fields() {
           'module' => 'ding_entity',
           'settings' => array(),
           'type' => 'ding_entity_buttons_default',
-          'weight' => '2',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -386,10 +387,11 @@ function ding_ting_frontend_field_default_fields() {
           'weight' => '0',
         ),
         'default' => array(
-          'label' => 'above',
+          'label' => 'inline',
+          'module' => 'ding_periodical',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '9',
+          'type' => 'ding_periodical_issues_default',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -704,9 +706,10 @@ function ding_ting_frontend_field_default_fields() {
         ),
         'default' => array(
           'label' => 'above',
+          'module' => 'ting_reference',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '8',
+          'type' => 'ting_reference_reverse_default',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -780,9 +783,10 @@ function ding_ting_frontend_field_default_fields() {
         ),
         'default' => array(
           'label' => 'hidden',
+          'module' => 'ting_relation',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '11',
+          'type' => 'ting_relations_default',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -855,9 +859,10 @@ function ding_ting_frontend_field_default_fields() {
         ),
         'default' => array(
           'label' => 'inline',
+          'module' => 'ting',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '10',
+          'type' => 'ting_series_default',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'inline',
@@ -1100,9 +1105,10 @@ function ding_ting_frontend_field_default_fields() {
         ),
         'default' => array(
           'label' => 'hidden',
+          'module' => 'ding_availability',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '7',
+          'type' => 'ding_availability_type',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'hidden',
