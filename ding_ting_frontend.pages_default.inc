@@ -497,6 +497,26 @@ search/ting
     $pane = new stdClass;
     $pane->pid = 'new-4';
     $pane->panel = 'middle';
+    $pane->type = 'block';
+    $pane->subtype = 'fb_social-FB like';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $display->content['new-4'] = $pane;
+    $display->panels['middle'][0] = 'new-4';
+    $pane = new stdClass;
+    $pane->pid = 'new-5';
+    $pane->panel = 'middle';
     $pane->type = 'ting_object';
     $pane->subtype = 'ting_object';
     $pane->shown = TRUE;
@@ -512,11 +532,11 @@ search/ting
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 0;
-    $display->content['new-4'] = $pane;
-    $display->panels['middle'][0] = 'new-4';
+    $pane->position = 1;
+    $display->content['new-5'] = $pane;
+    $display->panels['middle'][1] = 'new-5';
     $pane = new stdClass;
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'right';
     $pane->type = 'campaign';
     $pane->subtype = 'campaign';
@@ -541,10 +561,10 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-5'] = $pane;
-    $display->panels['right'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['right'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-4';
+  $display->title_pane = 'new-5';
   $handler->conf['display'] = $display;
   $export['ting_object_panel_context'] = $handler;
 
