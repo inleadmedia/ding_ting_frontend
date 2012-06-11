@@ -68,6 +68,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $display->content['new-1'] = $pane;
     $display->panels['left'][0] = 'new-1';
     $pane = new stdClass;
@@ -88,6 +89,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $display->content['new-2'] = $pane;
     $display->panels['middle'][0] = 'new-2';
     $pane = new stdClass;
@@ -108,6 +110,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
+    $pane->locks = '';
     $display->content['new-3'] = $pane;
     $display->panels['middle'][1] = 'new-3';
     $pane = new stdClass;
@@ -128,6 +131,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
+    $pane->locks = '';
     $display->content['new-4'] = $pane;
     $display->panels['middle'][2] = 'new-4';
     $pane = new stdClass;
@@ -148,6 +152,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 3;
+    $pane->locks = '';
     $display->content['new-5'] = $pane;
     $display->panels['middle'][3] = 'new-5';
     $pane = new stdClass;
@@ -168,6 +173,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 4;
+    $pane->locks = '';
     $display->content['new-6'] = $pane;
     $display->panels['middle'][4] = 'new-6';
     $pane = new stdClass;
@@ -188,6 +194,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 5;
+    $pane->locks = '';
     $display->content['new-7'] = $pane;
     $display->panels['middle'][5] = 'new-7';
     $pane = new stdClass;
@@ -219,6 +226,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 6;
+    $pane->locks = '';
     $display->content['new-8'] = $pane;
     $display->panels['middle'][6] = 'new-8';
     $pane = new stdClass;
@@ -247,6 +255,7 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
+    $pane->locks = '';
     $display->content['new-9'] = $pane;
     $display->panels['right'][0] = 'new-9';
   $display->hide_title = PANELS_TITLE_NONE;
@@ -287,7 +296,7 @@ search/ting
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass;
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-10';
     $pane->panel = 'left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_collection_types';
@@ -304,10 +313,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-1'] = $pane;
-    $display->panels['left'][0] = 'new-1';
+    $pane->locks = '';
+    $display->content['new-10'] = $pane;
+    $display->panels['left'][0] = 'new-10';
     $pane = new stdClass;
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-11';
     $pane->panel = 'left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_object_types';
@@ -324,10 +334,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
-    $display->content['new-2'] = $pane;
-    $display->panels['left'][1] = 'new-2';
+    $pane->locks = '';
+    $display->content['new-11'] = $pane;
+    $display->panels['left'][1] = 'new-11';
     $pane = new stdClass;
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-12';
     $pane->panel = 'middle';
     $pane->type = 'ting_collection';
     $pane->subtype = 'ting_collection';
@@ -345,10 +356,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-3'] = $pane;
-    $display->panels['middle'][0] = 'new-3';
+    $pane->locks = '';
+    $display->content['new-12'] = $pane;
+    $display->panels['middle'][0] = 'new-12';
     $pane = new stdClass;
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-13';
     $pane->panel = 'right';
     $pane->type = 'campaign';
     $pane->subtype = 'campaign';
@@ -373,10 +385,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-4'] = $pane;
-    $display->panels['right'][0] = 'new-4';
+    $pane->locks = '';
+    $display->content['new-13'] = $pane;
+    $display->panels['right'][0] = 'new-13';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-3';
+  $display->title_pane = 'new-12';
   $handler->conf['display'] = $display;
   $export['ting_collection_panel_context'] = $handler;
 
@@ -413,7 +426,7 @@ search/ting
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass;
-    $pane->pid = 'new-1';
+    $pane->pid = 'new-14';
     $pane->panel = 'left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_collection_types';
@@ -430,10 +443,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-1'] = $pane;
-    $display->panels['left'][0] = 'new-1';
+    $pane->locks = '';
+    $display->content['new-14'] = $pane;
+    $display->panels['left'][0] = 'new-14';
     $pane = new stdClass;
-    $pane->pid = 'new-2';
+    $pane->pid = 'new-15';
     $pane->panel = 'left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_object_types';
@@ -450,10 +464,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 1;
-    $display->content['new-2'] = $pane;
-    $display->panels['left'][1] = 'new-2';
+    $pane->locks = '';
+    $display->content['new-15'] = $pane;
+    $display->panels['left'][1] = 'new-15';
     $pane = new stdClass;
-    $pane->pid = 'new-3';
+    $pane->pid = 'new-16';
     $pane->panel = 'left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_relation_anchors';
@@ -470,10 +485,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 2;
-    $display->content['new-3'] = $pane;
-    $display->panels['left'][2] = 'new-3';
+    $pane->locks = '';
+    $display->content['new-16'] = $pane;
+    $display->panels['left'][2] = 'new-16';
     $pane = new stdClass;
-    $pane->pid = 'new-4';
+    $pane->pid = 'new-17';
     $pane->panel = 'middle';
     $pane->type = 'ting_object';
     $pane->subtype = 'ting_object';
@@ -491,10 +507,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-4'] = $pane;
-    $display->panels['middle'][0] = 'new-4';
+    $pane->locks = '';
+    $display->content['new-17'] = $pane;
+    $display->panels['middle'][0] = 'new-17';
     $pane = new stdClass;
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-18';
     $pane->panel = 'right';
     $pane->type = 'campaign';
     $pane->subtype = 'campaign';
@@ -519,10 +536,11 @@ search/ting
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 0;
-    $display->content['new-5'] = $pane;
-    $display->panels['right'][0] = 'new-5';
+    $pane->locks = '';
+    $display->content['new-18'] = $pane;
+    $display->panels['right'][0] = 'new-18';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-4';
+  $display->title_pane = 'new-17';
   $handler->conf['display'] = $display;
   $export['ting_object_panel_context'] = $handler;
 
