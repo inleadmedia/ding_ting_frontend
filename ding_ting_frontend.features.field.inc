@@ -305,7 +305,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -382,7 +382,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'above',
@@ -700,7 +700,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'above',
@@ -777,7 +777,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'hidden',
@@ -853,7 +853,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '0',
         ),
         'default' => array(
           'label' => 'inline',
@@ -1094,9 +1094,8 @@ function ding_ting_frontend_field_default_fields() {
         ),
         'collection_primary' => array(
           'label' => 'hidden',
-          'module' => 'ting',
           'settings' => array(),
-          'type' => 'ting_type_default',
+          'type' => 'hidden',
           'weight' => '1',
         ),
         'default' => array(
