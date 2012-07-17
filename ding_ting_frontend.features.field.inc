@@ -604,7 +604,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'hidden',
           'module' => 'ting_covers',
           'settings' => array(
-            'image_style' => 'ding_medium',
+            'image_style' => 'medium',
           ),
           'type' => 'ting_cover_default',
           'weight' => '0',
@@ -658,6 +658,84 @@ function ding_ting_frontend_field_default_fields() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => '0',
+      ),
+    ),
+  );
+
+  // Exported field: 'ting_object-ting_object-ting_infomedia'
+  $fields['ting_object-ting_object-ting_infomedia'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'ting_infomedia',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'ting_infomedia',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'storage' => array(
+        'active' => '1',
+        'module' => 'blackhole',
+        'settings' => array(),
+        'type' => 'blackhole',
+      ),
+      'translatable' => '0',
+      'type' => 'ting_infomedia',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ting_object',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'ding_entity_type' => 'ding_entity',
+      'display' => array(
+        'collection_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'collection_primary' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'ting_infomedia',
+          'settings' => array(),
+          'type' => 'ting_infomedia_default',
+          'weight' => 40,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'user_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'ting_object',
+      'field_name' => 'ting_infomedia',
+      'label' => 'Link to infomedia articles',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'blackhole',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
       ),
     ),
   );
@@ -893,6 +971,84 @@ function ding_ting_frontend_field_default_fields() {
     ),
   );
 
+  // Exported field: 'ting_object-ting_object-ting_sfx'
+  $fields['ting_object-ting_object-ting_sfx'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'ting_sfx',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'ting_sfx',
+      'settings' => array(
+        'max_length' => 255,
+      ),
+      'storage' => array(
+        'active' => '1',
+        'module' => 'blackhole',
+        'settings' => array(),
+        'type' => 'blackhole',
+      ),
+      'translatable' => '0',
+      'type' => 'ting_sfx',
+    ),
+    'field_instance' => array(
+      'bundle' => 'ting_object',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'ding_entity_type' => 'ding_entity',
+      'display' => array(
+        'collection_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'collection_primary' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'default' => array(
+          'label' => 'above',
+          'module' => 'ting_sfx',
+          'settings' => array(),
+          'type' => 'ting_sfx_default',
+          'weight' => 41,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '0',
+        ),
+        'user_list' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'ting_object',
+      'field_name' => 'ting_sfx',
+      'label' => 'Search other sites',
+      'required' => FALSE,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'module' => 'blackhole',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+    ),
+  );
+
   // Exported field: 'ting_object-ting_object-ting_subjects'
   $fields['ting_object-ting_object-ting_subjects'] = array(
     'field_config' => array(
@@ -922,7 +1078,7 @@ function ding_ting_frontend_field_default_fields() {
       'ding_entity_type' => 'ding_entity',
       'display' => array(
         'collection_list' => array(
-          'label' => 'inline',
+          'label' => 'above',
           'module' => 'ting',
           'settings' => array(),
           'type' => 'ting_subjects_default',
@@ -1005,7 +1161,7 @@ function ding_ting_frontend_field_default_fields() {
           'label' => 'hidden',
           'module' => 'ting',
           'settings' => array(
-            'link_type' => 'none',
+            'link_type' => 'object',
           ),
           'type' => 'ting_title_default',
           'weight' => '7',
@@ -1145,7 +1301,9 @@ function ding_ting_frontend_field_default_fields() {
   t('Cover');
   t('Holdings information');
   t('Issues');
+  t('Link to infomedia articles');
   t('On this site');
+  t('Search other sites');
   t('Series');
   t('Subjects');
   t('Ting collection object types');
